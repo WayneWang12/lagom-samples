@@ -51,7 +51,8 @@ lazy val `shopping-cart` = (project in file("shopping-cart"))
       postgresDriver,
       lagomScaladslAkkaDiscovery,
       akkaDiscoveryKubernetesApi,
-      "com.typesafe.akka" %% "akka-persistence-testkit" % "2.6.14" % Test
+      "com.typesafe.akka" %% "akka-persistence-testkit" % "2.6.8" % Test,
+      "com.h2database"     % "h2"                       % "1.4.200"
     )
   )
   .settings(dockerSettings)
